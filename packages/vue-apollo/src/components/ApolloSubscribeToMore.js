@@ -1,4 +1,4 @@
-import gql from 'graphql-tag'
+// import gql from 'graphql-tag'
 
 let uid = 0
 
@@ -55,9 +55,9 @@ export default {
       this.destroy()
 
       let document = this.document
-      if (typeof document === 'function') {
-        document = document(gql)
-      }
+      // if (typeof document === 'function') {
+      //   document = document(gql)
+      // }
 
       this.$_sub = this.getDollarApollo().addSmartSubscription(this.$_key, {
         document,

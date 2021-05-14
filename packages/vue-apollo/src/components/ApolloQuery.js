@@ -1,4 +1,4 @@
-import gql from 'graphql-tag'
+// import gql from 'graphql-tag'
 
 function isDataFilled (data) {
   return data && Object.keys(data).length > 0
@@ -135,9 +135,9 @@ export default {
     query () {
       return {
         query () {
-          if (typeof this.query === 'function') {
-            return this.query(gql)
-          }
+          // if (typeof this.query === 'function') {
+          //   return this.query(gql)
+          // }
           return this.query
         },
         variables () { return this.variables },

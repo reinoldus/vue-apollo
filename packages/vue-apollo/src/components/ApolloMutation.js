@@ -1,5 +1,5 @@
 import { addGqlError } from '../../lib/utils'
-import gql from 'graphql-tag'
+// import gql from 'graphql-tag'
 
 export default {
   props: {
@@ -63,9 +63,9 @@ export default {
       this.error = null
 
       let mutation = this.mutation
-      if (typeof mutation === 'function') {
-        mutation = mutation(gql)
-      }
+      // if (typeof mutation === 'function') {
+      //   mutation = mutation(gql)
+      // }
 
       return this.$apollo.mutate({
         mutation,
